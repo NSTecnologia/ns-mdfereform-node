@@ -52,7 +52,7 @@ async function emitirMDFeSincrono(conteudo, tpAmb, tpDown, CNPJLicenca, caminhoS
                 respostaSincrona.chMDFe = statusResponse.chMDFe
                 respostaSincrona.nProt = statusResponse.nProt
 
-                let downloadBody = new download.body(
+                let downloadBody = new download.Body(
                     statusResponse.chMDFe,
                     tpDown,
                     tpAmb
