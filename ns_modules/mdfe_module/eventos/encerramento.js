@@ -5,12 +5,11 @@ const util = require('../../api_module/util')
 const url = "https://mdfe.ns.eti.br/mdfe/closure"
 
 class Body {
-    constructor(chMDFe, tpAmb, dhEvento, nProt, xJust, dtEnc, cUF, cMun) {
+    constructor(chMDFe, tpAmb, dhEvento, nProt, dtEnc, cUF, cMun) {
         this.chMDFe = chMDFe;
         this.tpAmb = tpAmb;
         this.dhEvento = dhEvento;
         this.nProt = nProt;
-        this.xJust = xJust;
         this.dtEnc = dtEnc;
         this.cUF = cUF;
         this.cMun = cMun;
