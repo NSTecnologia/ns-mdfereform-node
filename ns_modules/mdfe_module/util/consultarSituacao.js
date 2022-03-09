@@ -1,5 +1,6 @@
 const nsAPI = require('../../api_module/nsAPI')
 const url = "https://mdfe.ns.eti.br/mdfe/stats"
+const util = require('../../api_module/util')
 
 class Body {
     constructor(licencaCnpj, chMDFe, tpAmb) {
@@ -10,10 +11,10 @@ class Body {
 }
 
 class Response {
-    constructor({ status, motivo, retConsSitNFe, erros }) {
+    constructor({ status, motivo, retConsSitMDFe, erros }) {
         this.status = status;
         this.motivo = motivo;
-        this.retConsSitNFe = retConsSitNFe;
+        this.retConsSitMDFe = retConsSitMDFe;
         this.erros = erros
     }
 }
