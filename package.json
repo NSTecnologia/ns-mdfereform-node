@@ -1,0 +1,19 @@
+{
+  "name": "ns-mdfereform-node",
+  "version": "1.0.0",
+  "description": "Biblioteca alterada para auxiliar a integração do parceiro cuja foi alterado o padrão que usava o configParceiro mudando para a passagem do token e do cnpj como parametros no envio, consulta de status, download., eventos e utilitários.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NSTecnologia/ns-mdfereform-node.git"
+  },
+  "author": "NS Tecnologia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NSTecnologia/ns-mdfereform-node/issues"
+  },
+  "homepage": "https://github.com/NSTecnologia/ns-mdfereform-node#readme"
+}
