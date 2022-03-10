@@ -1,15 +1,15 @@
 const nsAPI = require('../../api_module/nsAPI')
-
+const util = require('../../api_module/util')
 const url = "https://mdfe.ns.eti.br/util/enviaremail"
 
 class Body {
-    constructor(chMDFe, tpAmb, enviaEmailDoc, anexarPDF, anexarEvento, email) {
+    constructor(chMDFe, tpAmb, enviaEmailDoc, anexarPDF, anexarEvento, emails) {
         this.chMDFe = chMDFe;
         this.tpAmb = tpAmb;
         this.enviaEmailDoc = enviaEmailDoc;
         this.anexarPDF = anexarPDF;
         this.anexarEvento = anexarEvento;
-        this.email = email;
+        this.emails = emails.map((email) => ({endereco: email}));
     }
 }
 
@@ -20,6 +20,7 @@ class Response {
         this.erro = erro;
     }
 }
+
 
 async function sendPostRequest(conteudo, token) {
 
